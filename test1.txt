@@ -1,3 +1,5 @@
 第一次 abcd
 
 增加一行
+
+add func1
