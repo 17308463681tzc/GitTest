@@ -7,3 +7,5 @@ add func1
 add func2
 
 develop2 add func3
+
+develop2 add func4
