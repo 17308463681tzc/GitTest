@@ -19,4 +19,14 @@ public Message miniProgramLogin(HttpServletRequest httpServletRequest){
     public Message marketingOperate(String phone, Long tmkId, Long giftPackageId, HttpServletRequest request){
         String openid = request.getHeader("openid");
         return loginService.marketingOperate(phone, tmkId,giftPackageId, openid);
-    }	    Message miniProgramLogin(String mobile, String verifyCode, HttpServletRequest request);    public Message WeChatAppletLogin(String phone,String verifyCode, String code,
+    }
+	
+	
+	    Message miniProgramLogin(String mobile, String verifyCode, HttpServletRequest request);
+
+    public Message WeChatAppletLogin(String phone,String verifyCode, String code,
+        String encryptedData, String iv, HttpServletRequest request);
+
+    public String getUnionId(String code, String encryptedData, String iv);
+
+    Message marketingOperate(String phone,  Long tmkId,Long giftPackageId, String openid);
