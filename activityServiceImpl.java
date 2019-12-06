@@ -22,11 +22,14 @@ public Message miniProgramLogin(HttpServletRequest httpServletRequest){
     }
 	
 	
-    }	    Message miniProgramLogin(String mobile, String verifyCode, HttpServletRequest request);    public Message WeChatAppletLogin(String phone,String verifyCode, String code,
+	    Message miniProgramLogin(String mobile, String verifyCode, HttpServletRequest request);
 
     public Message WeChatAppletLogin(String phone,String verifyCode, String code,
         String encryptedData, String iv, HttpServletRequest request);
 
     public String getUnionId(String code, String encryptedData, String iv);
 
-    
+    Message marketingOperate(String phone,  Long tmkId,Long giftPackageId, String openid);
+	
+	
+	新上传的
